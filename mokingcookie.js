@@ -100,4 +100,4 @@ function createTable(cookieData) {
 }
 
 const table = createTable(cookieData);
-document.querySelector(".policy_wrapper").append(table);
+document.body.appendChild(table);
