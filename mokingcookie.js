@@ -1,3 +1,4 @@
+console.log('Начало выполнения скрипта')
 const cookieData = [
   {
     category: "Necessario",
@@ -100,4 +101,7 @@ function createTable(cookieData) {
 }
 
 const table = createTable(cookieData);
+console.log(table)
 document.body.appendChild(table);
+document.body.appendChild(`<p>Марина тупая дура</p>`);
+
