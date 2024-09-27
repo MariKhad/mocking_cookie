@@ -108,7 +108,9 @@ if (policyWrapper) {
 } else {
   console.error("Элемент .policy__wrapper не найден!");
 }
-  document.body.appendChild(`<p>Марина тупая дура</p>`);
+   const paragraph = document.createElement("p");
+  paragraph.textContent = "Марина тупая дура";
+  document.body.appendChild(paragraph);
 })
 
 
