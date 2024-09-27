@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 console.log('Начало выполнения скрипта')
 const cookieData = [
   {
@@ -101,7 +102,13 @@ function createTable(cookieData) {
 }
 
 const table = createTable(cookieData);
-console.log(table)
-document.body.appendChild(table);
+const policyWrapper = document.querySelector(".policy__wrapper");
+if (policyWrapper) {
+  policyWrapper.appendChild(table); 
+} else {
+  console.error("Элемент .policy__wrapper не найден!");
+}
+  
+}
 document.body.appendChild(`<p>Марина тупая дура</p>`);
 
